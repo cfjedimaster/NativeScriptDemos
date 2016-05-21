@@ -24,7 +24,7 @@ exports.load = function name(params) {
 		console.log('leaving early');
 		return;
 	}
-	console.log('testing'); 
+
 	return fetch('https://query.yahooapis.com/v1/public/yql?q=select%20title%2Clink%2Cdescription%20from%20rss%20where%20url%3D%22'+encodeURIComponent(config.rssURL)+'%22&format=json&diagnostics=true', {
 	})
 	.then(handleErrors)
