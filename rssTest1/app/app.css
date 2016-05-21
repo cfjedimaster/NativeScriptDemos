@@ -1,0 +1,17 @@
+﻿@import { url('~/platform.css') };
+
+ActionBar {
+    color: white;
+    background-color: #ff0000;
+}
+
+Page {
+    background-color: white;
+    font-size: 17;
+}
+
+Label {
+    padding-left: 10;
+    padding-right: 10;
+    height: 30;
+}
