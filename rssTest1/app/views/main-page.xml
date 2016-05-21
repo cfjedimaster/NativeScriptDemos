@@ -1,7 +1,7 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="loaded">
 
 	<Page.actionBar>
-		<ActionBar title="RSS Feed" />
+		<ActionBar title="{{ title }}" />
 	</Page.actionBar>
 
 	<StackLayout orientation="vertical">

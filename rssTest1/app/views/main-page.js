@@ -1,12 +1,15 @@
 var RssListViewModel = require('../shared/view-models/rss-list-view-model');
 var frameModule = require('ui/frame');
 
+var config = require('../shared/config');
+
 var Observable = require('data/observable').Observable;
 var viewModule = require('ui/core/view');
 var page;
 
 var pageData = new Observable({
-	rssList:RssListViewModel
+	rssList:RssListViewModel,
+	title:config.title
 });
 
 
