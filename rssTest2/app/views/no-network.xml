@@ -1,0 +1,11 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="loaded">
+
+	<Page.actionBar>
+		<ActionBar title="Offline" />
+	</Page.actionBar>
+
+	<StackLayout orientation="vertical">
+		<TextView text="Sorry, but you are currently offline." />
+		<Button text="Check Again" tap="checkConnectivity" />
+	</StackLayout>
+</Page>

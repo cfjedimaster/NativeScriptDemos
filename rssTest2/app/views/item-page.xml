@@ -1,0 +1,12 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="loaded">
+
+	<Page.actionBar>
+		<ActionBar title="{{ title }}" />
+	</Page.actionBar>
+	<GridLayout rows="*,auto">
+		<ScrollView>
+			<HtmlView html="{{ text }}" />
+		</ScrollView>
+		<Button text="Open in Browser" class="openButton" row="1" tap="openURL" />
+	</GridLayout>
+</Page>
