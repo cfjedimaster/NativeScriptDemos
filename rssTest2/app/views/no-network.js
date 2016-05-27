@@ -7,11 +7,9 @@ var page;
 
 exports.loaded = function(args) {
 	page = args.object;
-	//page.bindingContext = pageData;
 };
 
 exports.checkConnectivity = function(args) {
-	console.log('tap');	
 	var connectionType = connectivity.getConnectionType();
 	if(connectivity.getConnectionType() === connectivity.connectionType.none) {
 		dialogs.alert({
@@ -19,5 +17,7 @@ exports.checkConnectivity = function(args) {
 			title:'Offline',
 			okButtonText:'Close'
 		});
+	} else {
+		frameModule.topmost().navigate('views/main-page');
 	}
 }
