@@ -20,7 +20,6 @@ exports.loaded = function(args) {
 	var connectionType = connectivity.getConnectionType();
 	if(connectivity.getConnectionType() === connectivity.connectionType.none) {
 		console.log('offline');
-		//frameModule.topmost().navigate('views/no-network');
 		var navigationEntry = {
 			backstackVisible:false,
 			clearHistory:true,
@@ -33,8 +32,6 @@ exports.loaded = function(args) {
 };
 
 exports.loadItem = function(args) {
-	console.log('tap item',args.index);
-	console.log('tap item 2', args.view.bindingContext.title);
 	//rssList.viewModel.set('selectedItem', args.view.bindingContext);
 	RssListViewModel.viewModel.set('selectedItem', args.view.bindingContext);
 	frameModule.topmost().navigate('views/item-page');
